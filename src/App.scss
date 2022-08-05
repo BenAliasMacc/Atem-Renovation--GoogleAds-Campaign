@@ -1,0 +1,85 @@
+// Variables
+$primaryColor: #1f2b50;
+
+// Style général
+* {
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #3a3a3a;
+}
+html {
+
+}
+body {
+  
+}
+.app {
+
+}
+h1 {
+  font-size: 2rem;
+}
+h1, h2 {
+  color: $primaryColor;
+}
+h2 {
+  font-size: 1.5rem;
+}
+section {
+  display: flex;
+  justify-content: center;  
+}
+
+// Composants
+.header {
+  position: relative;
+  display: flex;
+  height: 80px;
+  color: white;
+  box-shadow: 0 8px 8px 0 rgb(0 0 0 / 10%), 0 8px 16px -16px rgb(0 0 0 / 32%);
+  nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    li {
+      list-style-type: none;
+    }
+  }
+  img {
+    height: 70px;
+    width: auto;
+  }
+}
+.pompe-a-chaleur,.maprime-renov {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f5f5fe;
+  width: 100%;
+  min-height: 100vh;
+  padding-inline: 0.5rem;
+  padding-top: 1rem;
+}
+.pompe-a-chaleur {
+  &__content {
+    width: 650px;
+    ul {      
+      padding: 2.5rem;
+      font-size: 1.3rem;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }  
+}
+
+//Import styel Formulaire
+@import "./Components/Formulaire/Formulaire"

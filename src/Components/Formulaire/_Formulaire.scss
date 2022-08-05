@@ -1,0 +1,135 @@
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: fit-content;
+    width: 40%;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px #00000029;
+    & img {
+        width: 75px;
+        height: 75px;
+    }
+}
+.header-form {
+    text-align: center;
+    padding-top: 16px;
+    &__titre {        
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 20px;
+        color: #000;
+        text-transform: uppercase
+    }
+    &_description {
+        color: #7c7c7c;
+    }
+}
+.questions-input, .questions-radio {
+    display: flex;      
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1;
+    width: 100%;
+}
+.questions-input {    
+    &--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem 1rem;
+        label {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 0.5rem;
+        }
+        input {
+
+            border-radius: 3px;
+            height: 48px;
+            width: 100%;
+            padding-left: 1rem;
+            outline: none;
+            border: 1px solid #4a85ef;
+            box-shadow: 0 0 0 2px rgb(74 133 239 / 30%);
+            &::placeholder {
+                color: #c0cad5;
+            }
+        }
+    }
+}
+.questions-radio {
+    gap: 16px;
+    &--container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-evenly;
+    }
+    &__choices {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 45%;
+        height: 150px;
+        border: 1px solid #a9b3c6;
+        border-radius: 3px;
+        text-align: center;
+        label {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            cursor: pointer;
+            & p {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+        input {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+}
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primaryColor;
+    width: 100%;
+    height: 60px;
+    border-radius: 0 0 6px 6px;
+    button {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-inline: 0.5rem;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        img {
+            align-self: center;
+            width: 28px;
+            height: 28px;
+            padding: 8px;
+        }
+        p {
+            color: white;
+        }
+    }
+}
